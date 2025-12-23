@@ -1,0 +1,454 @@
+{
+  "charts/network-policy/values.yaml": {
+    "f": "values.yaml",
+    "p": "charts/network-policy/values.yaml",
+    "v": "v1",
+    "c": {
+      "814f64": {
+        "user": "Rohtash Kumar",
+        "model": "claude-opus-4@20250514",
+        "extraContext": "tbd",
+        "timestamp": 1766505442,
+        "hash": "b5d6e704",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentWriteTool"
+      }
+    },
+    "l": {
+      "0": {
+        "chunkId": "814f64",
+        "hash": "bbd744f0",
+        "encoded": "#%20Default%20values%20for%20network-policy.",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "814f64",
+        "hash": "9024b39f",
+        "encoded": "#%20This%20is%20a%20YAML-formatted%20file.",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "814f64",
+        "hash": "d85aba58",
+        "encoded": "#%20Declare%20variables%20to%20be%20passed%20into%20your%20templates.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "814f64",
+        "hash": "238e32e2",
+        "encoded": "#%20Network%20Policy%20configuration",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "814f64",
+        "hash": "981de424",
+        "encoded": "networkPolicy:",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "814f64",
+        "hash": "59865ca1",
+        "encoded": "#%20Name%20of%20the%20network%20policy",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "814f64",
+        "hash": "a2ce478e",
+        "encoded": "name:%20default-network-policy",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "814f64",
+        "hash": "9d2a0f7c",
+        "encoded": "#%20Enable%20or%20disable%20the%20network%20policy",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "814f64",
+        "hash": "5d8c33af",
+        "encoded": "enabled:%20true",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "814f64",
+        "hash": "a1ff30dd",
+        "encoded": "#%20Labels%20to%20apply%20to%20the%20network%20policy",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "814f64",
+        "hash": "0171b2aa",
+        "encoded": "labels:",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "814f64",
+        "hash": "0bafd38f",
+        "encoded": "app:%20network-security",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "814f64",
+        "hash": "4f2c98de",
+        "encoded": "policy-type:%20default",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "814f64",
+        "hash": "a4778647",
+        "encoded": "#%20Annotations%20to%20apply%20to%20the%20network%20policy",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "814f64",
+        "hash": "ab880660",
+        "encoded": "annotations:%20%7B%7D",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "814f64",
+        "hash": "3048e7c7",
+        "encoded": "#%20Pod%20selector%20for%20the%20network%20policy",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "814f64",
+        "hash": "5adc17f4",
+        "encoded": "#%20Leave%20empty%20to%20apply%20to%20all%20pods%20in%20the%20namespace",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "814f64",
+        "hash": "33b8308b",
+        "encoded": "podSelector:",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "814f64",
+        "hash": "23ba7c20",
+        "encoded": "matchLabels:%20%7B%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "814f64",
+        "hash": "c0cce89e",
+        "encoded": "#%20Policy%20types%20(Ingress,%20Egress,%20or%20both)",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "814f64",
+        "hash": "a0a51cf4",
+        "encoded": "policyTypes:",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "814f64",
+        "hash": "66108374",
+        "encoded": "-%20Ingress",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "814f64",
+        "hash": "a4ad958f",
+        "encoded": "-%20Egress",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "814f64",
+        "hash": "907213c7",
+        "encoded": "#%20Ingress%20rules",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "814f64",
+        "hash": "c1cb2d32",
+        "encoded": "ingress:",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "814f64",
+        "hash": "cffef925",
+        "encoded": "#%20Default%20deny%20all%20ingress%20if%20no%20rules%20specified",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "814f64",
+        "hash": "2a5658cb",
+        "encoded": "rules:%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "814f64",
+        "hash": "07a8e763",
+        "encoded": "#%20Example%20ingress%20rules:",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "814f64",
+        "hash": "1988a945",
+        "encoded": "#%20rules:",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "814f64",
+        "hash": "de8c1224",
+        "encoded": "#%20%20%20-%20from:",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "814f64",
+        "hash": "27089865",
+        "encoded": "#%20%20%20%20%20-%20namespaceSelector:",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "814f64",
+        "hash": "2c8de596",
+        "encoded": "#%20%20%20%20%20%20%20%20%20matchLabels:",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "814f64",
+        "hash": "8d5da8cf",
+        "encoded": "#%20%20%20%20%20%20%20%20%20%20%20name:%20allowed-namespace",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "814f64",
+        "hash": "6b696e64",
+        "encoded": "#%20%20%20%20%20-%20podSelector:",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "814f64",
+        "hash": "d469a5e2",
+        "encoded": "#%20%20%20%20%20%20%20%20%20matchLabels:",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "814f64",
+        "hash": "e54e5d1b",
+        "encoded": "#%20%20%20%20%20%20%20%20%20%20%20app:%20allowed-app",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "814f64",
+        "hash": "d06da35c",
+        "encoded": "#%20%20%20%20%20ports:",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "814f64",
+        "hash": "886d7067",
+        "encoded": "#%20%20%20%20%20-%20protocol:%20TCP",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "814f64",
+        "hash": "2e62a8c3",
+        "encoded": "#%20%20%20%20%20%20%20port:%2080",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "814f64",
+        "hash": "7c1a188f",
+        "encoded": "#%20%20%20%20%20-%20protocol:%20TCP",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "814f64",
+        "hash": "d513f46f",
+        "encoded": "#%20%20%20%20%20%20%20port:%20443",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "814f64",
+        "hash": "e0a29001",
+        "encoded": "#%20Egress%20rules",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "814f64",
+        "hash": "9250c586",
+        "encoded": "egress:",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "814f64",
+        "hash": "3839a53b",
+        "encoded": "#%20Default%20allow%20DNS%20and%20other%20essential%20services",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "814f64",
+        "hash": "02d0550f",
+        "encoded": "rules:",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "814f64",
+        "hash": "45ad301c",
+        "encoded": "#%20Allow%20DNS",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "814f64",
+        "hash": "f75b8930",
+        "encoded": "-%20to:",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "814f64",
+        "hash": "94d5751a",
+        "encoded": "-%20namespaceSelector:",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "814f64",
+        "hash": "ce48ee35",
+        "encoded": "matchLabels:",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "814f64",
+        "hash": "28d8c380",
+        "encoded": "name:%20kube-system",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "814f64",
+        "hash": "4cd96032",
+        "encoded": "-%20podSelector:",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "814f64",
+        "hash": "04dbca73",
+        "encoded": "matchLabels:",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "814f64",
+        "hash": "dd39b099",
+        "encoded": "k8s-app:%20kube-dns",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "814f64",
+        "hash": "aa3e8ee3",
+        "encoded": "ports:",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "814f64",
+        "hash": "2bcf3123",
+        "encoded": "-%20protocol:%20UDP",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "814f64",
+        "hash": "a5b5e8b2",
+        "encoded": "port:%2053",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "814f64",
+        "hash": "8a8579a7",
+        "encoded": "-%20protocol:%20TCP",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "814f64",
+        "hash": "4415febe",
+        "encoded": "port:%2053",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "814f64",
+        "hash": "a45dbc20",
+        "encoded": "#%20Example%20additional%20egress%20rules:",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "814f64",
+        "hash": "afd6177e",
+        "encoded": "#%20-%20to:",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "814f64",
+        "hash": "8381b24f",
+        "encoded": "#%20%20%20-%20ipBlock:",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "814f64",
+        "hash": "bb4167c0",
+        "encoded": "#%20%20%20%20%20%20%20cidr:%2010.0.0.0/8",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "814f64",
+        "hash": "464a347b",
+        "encoded": "#%20%20%20%20%20%20%20except:",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "814f64",
+        "hash": "4e091970",
+        "encoded": "#%20%20%20%20%20%20%20-%2010.0.1.0/24",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "814f64",
+        "hash": "a4ccf668",
+        "encoded": "#%20%20%20ports:",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "814f64",
+        "hash": "6784e220",
+        "encoded": "#%20%20%20-%20protocol:%20TCP",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "814f64",
+        "hash": "5b7afc53",
+        "encoded": "#%20%20%20%20%20port:%20443",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "814f64",
+        "hash": "b1e39397",
+        "encoded": "#%20Global%20settings",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "814f64",
+        "hash": "bbca78cd",
+        "encoded": "global:",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "814f64",
+        "hash": "5cc026e4",
+        "encoded": "#%20Namespace%20where%20the%20network%20policy%20will%20be%20deployed",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "814f64",
+        "hash": "64766e96",
+        "encoded": "#%20Can%20be%20overridden%20during%20installation%20with%20--namespace%20flag",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "814f64",
+        "hash": "9707a47d",
+        "encoded": "namespace:%20default",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

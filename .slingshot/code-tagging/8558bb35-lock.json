@@ -1,0 +1,244 @@
+{
+  "charts/authorization-policy/values.yaml": {
+    "f": "values.yaml",
+    "p": "charts/authorization-policy/values.yaml",
+    "v": "v1",
+    "c": {
+      "186e64": {
+        "user": "Rohtash Kumar",
+        "model": "claude-opus-4@20250514",
+        "extraContext": "tbd",
+        "timestamp": 1766505353,
+        "hash": "dcf55099",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentWriteTool"
+      }
+    },
+    "l": {
+      "0": {
+        "chunkId": "186e64",
+        "hash": "6d736a40",
+        "encoded": "#%20Default%20values%20for%20authorization-policy.",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "186e64",
+        "hash": "9024b39f",
+        "encoded": "#%20This%20is%20a%20YAML-formatted%20file.",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "186e64",
+        "hash": "d85aba58",
+        "encoded": "#%20Declare%20variables%20to%20be%20passed%20into%20your%20templates.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "186e64",
+        "hash": "6f8a5e04",
+        "encoded": "#%20Authorization%20Policy%20configuration",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "186e64",
+        "hash": "73490f79",
+        "encoded": "authorizationPolicy:",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "186e64",
+        "hash": "5a98875e",
+        "encoded": "#%20Name%20of%20the%20authorization%20policy",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "186e64",
+        "hash": "78ffd1a5",
+        "encoded": "name:%20default-deny-all",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "186e64",
+        "hash": "885e5fa7",
+        "encoded": "#%20Namespace%20where%20the%20policy%20will%20be%20applied",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "186e64",
+        "hash": "aba56e37",
+        "encoded": "namespace:%20istio-system",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "186e64",
+        "hash": "31f32f36",
+        "encoded": "#%20Enable%20or%20disable%20the%20authorization%20policy",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "186e64",
+        "hash": "34fdf58b",
+        "encoded": "enabled:%20true",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "186e64",
+        "hash": "3f1eb7ad",
+        "encoded": "#%20Labels%20to%20apply%20to%20the%20authorization%20policy",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "186e64",
+        "hash": "0a70bfa3",
+        "encoded": "labels:",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "186e64",
+        "hash": "e274ae70",
+        "encoded": "app:%20istio-security",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "186e64",
+        "hash": "f984aea8",
+        "encoded": "policy-type:%20default-deny",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "186e64",
+        "hash": "08f11d0c",
+        "encoded": "#%20Annotations%20to%20apply%20to%20the%20authorization%20policy",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "186e64",
+        "hash": "87351475",
+        "encoded": "annotations:%20%7B%7D",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "186e64",
+        "hash": "000b72f6",
+        "encoded": "#%20Selector%20for%20workloads%20to%20apply%20the%20policy",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "186e64",
+        "hash": "ddcb9bcb",
+        "encoded": "#%20Leave%20empty%20to%20apply%20to%20all%20workloads%20in%20the%20namespace",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "186e64",
+        "hash": "5dd9a57a",
+        "encoded": "selector:%20%7B%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "186e64",
+        "hash": "25e7aa64",
+        "encoded": "#%20Action%20to%20take%20(ALLOW,%20DENY,%20AUDIT,%20CUSTOM)",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "186e64",
+        "hash": "a36bdb56",
+        "encoded": "action:%20DENY",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "186e64",
+        "hash": "6f54e3a7",
+        "encoded": "#%20Rules%20for%20the%20authorization%20policy",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "186e64",
+        "hash": "f861cd4a",
+        "encoded": "#%20Default%20is%20empty%20which%20means%20deny%20all",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "186e64",
+        "hash": "7deb3099",
+        "encoded": "rules:%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "186e64",
+        "hash": "9717a03c",
+        "encoded": "#%20Example%20rules%20(uncomment%20to%20allow%20specific%20traffic):",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "186e64",
+        "hash": "1988a945",
+        "encoded": "#%20rules:",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "186e64",
+        "hash": "d3a3c9eb",
+        "encoded": "#%20%20%20-%20to:",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "186e64",
+        "hash": "44c48928",
+        "encoded": "#%20%20%20%20%20-%20operation:",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "186e64",
+        "hash": "3de8e04c",
+        "encoded": "#%20%20%20%20%20%20%20%20%20methods:%20%5B%22GET%22%5D",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "186e64",
+        "hash": "8c4d6e35",
+        "encoded": "#%20%20%20%20%20%20%20%20%20paths:%20%5B%22/health%22,%20%22/ready%22%5D",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "186e64",
+        "hash": "61ed3d18",
+        "encoded": "#%20%20%20-%20from:",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "186e64",
+        "hash": "58ee68fb",
+        "encoded": "#%20%20%20%20%20-%20source:",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "186e64",
+        "hash": "f6357e6b",
+        "encoded": "#%20%20%20%20%20%20%20%20%20principals:%20%5B%22cluster.local/ns/default/sa/my-service-account%22%5D",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "186e64",
+        "hash": "12a5720e",
+        "encoded": "#%20%20%20-%20when:",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "186e64",
+        "hash": "1ee01d34",
+        "encoded": "#%20%20%20%20%20-%20key:%20source.namespace",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "186e64",
+        "hash": "11ff52be",
+        "encoded": "#%20%20%20%20%20%20%20values:%20%5B%22istio-system%22,%20%22kube-system%22%5D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

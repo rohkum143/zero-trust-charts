@@ -1,0 +1,118 @@
+{
+  "charts/authorization-policy/Chart.yaml": {
+    "f": "Chart.yaml",
+    "p": "charts/authorization-policy/Chart.yaml",
+    "v": "v1",
+    "c": {
+      "186ffa": {
+        "user": "Rohtash Kumar",
+        "model": "claude-opus-4@20250514",
+        "extraContext": "tbd",
+        "timestamp": 1766505353,
+        "hash": "5637243e",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentWriteTool"
+      }
+    },
+    "l": {
+      "0": {
+        "chunkId": "186ffa",
+        "hash": "263e5fd4",
+        "encoded": "apiVersion:%20v2",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "186ffa",
+        "hash": "81e0a8ea",
+        "encoded": "name:%20authorization-policy",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "186ffa",
+        "hash": "82892812",
+        "encoded": "description:%20A%20Helm%20chart%20for%20Istio%20Authorization%20Policy%20with%20default%20deny%20in%20istio-system",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "186ffa",
+        "hash": "c1afe734",
+        "encoded": "type:%20application",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "186ffa",
+        "hash": "a3491eb3",
+        "encoded": "version:%200.1.0",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "186ffa",
+        "hash": "7dad14c1",
+        "encoded": "appVersion:%20%221.0%22",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "186ffa",
+        "hash": "3e28f3fc",
+        "encoded": "keywords:",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "186ffa",
+        "hash": "bb4ddb4c",
+        "encoded": "-%20istio",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "186ffa",
+        "hash": "9a887241",
+        "encoded": "-%20authorization",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "186ffa",
+        "hash": "7dff29a9",
+        "encoded": "-%20security",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "186ffa",
+        "hash": "98ec6f00",
+        "encoded": "-%20policy",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "186ffa",
+        "hash": "f8b32ba1",
+        "encoded": "maintainers:",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "186ffa",
+        "hash": "4df0527d",
+        "encoded": "-%20name:%20DevOps%20Team",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "186ffa",
+        "hash": "2ac69e7a",
+        "encoded": "home:%20https://github.com/your-org/charts",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "186ffa",
+        "hash": "abeabbc1",
+        "encoded": "sources:",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "186ffa",
+        "hash": "796bdc82",
+        "encoded": "-%20https://github.com/your-org/charts/tree/main/charts/authorization-policy",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
