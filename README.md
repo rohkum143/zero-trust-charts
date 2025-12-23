@@ -34,7 +34,7 @@ This repository provides two main Helm charts:
 
 ### Authorization Policy Chart
 
-**Location**: `charts/authorization-policy`
+**Location**: `gitclone/charts/authorization-policy`
 
 **Description**: This chart deploys an Istio Authorization Policy that implements a default deny-all policy in the istio-system namespace. This ensures that all traffic is denied by default unless explicitly allowed.
 
@@ -46,7 +46,7 @@ This repository provides two main Helm charts:
 
 ### Network Policy Chart
 
-**Location**: `charts/network-policy`
+**Location**: `gitclone/charts/network-policy`
 
 **Description**: This chart deploys Kubernetes Network Policies to control traffic flow at the IP address or port level (OSI layer 3 or 4).
 
@@ -61,35 +61,34 @@ This repository provides two main Helm charts:
 ### Adding the Helm Repository
 
 ```bash
-# Clone the repository
-git clone <your-repo-url>
-cd charts
+# You're already at the root directory
+# No need to clone or cd into any directory
 ```
 
 ### Installing Authorization Policy Chart
 
 ```bash
 # Install with default values (default deny-all in istio-system)
-helm install authorization-policy ./authorization-policy
+helm install authorization-policy ./gitclone/charts/authorization-policy
 
 # Install with custom values
-helm install authorization-policy ./authorization-policy -f custom-values.yaml
+helm install authorization-policy ./gitclone/charts/authorization-policy -f custom-values.yaml
 
 # Install in a specific namespace (note: the policy itself applies to istio-system)
-helm install authorization-policy ./authorization-policy -n security-policies --create-namespace
+helm install authorization-policy ./gitclone/charts/authorization-policy -n security-policies --create-namespace
 ```
 
 ### Installing Network Policy Chart
 
 ```bash
 # Install with default values in default namespace
-helm install network-policy ./network-policy
+helm install network-policy ./gitclone/charts/network-policy
 
 # Install in a specific namespace
-helm install network-policy ./network-policy -n my-app --create-namespace
+helm install network-policy ./gitclone/charts/network-policy -n my-app --create-namespace
 
 # Install with custom values
-helm install network-policy ./network-policy -f custom-values.yaml -n my-app
+helm install network-policy ./gitclone/charts/network-policy -f custom-values.yaml -n my-app
 ```
 
 ## Configuration
@@ -97,7 +96,7 @@ helm install network-policy ./network-policy -f custom-values.yaml -n my-app
 ### Authorization Policy Configuration
 
 | Parameter | Description | Default |
-|-----------|-------------|---------|
+|-----------|-------------|---------||
 | `authorizationPolicy.name` | Name of the authorization policy | `default-deny-all` |
 | `authorizationPolicy.namespace` | Namespace where the policy will be applied | `istio-system` |
 | `authorizationPolicy.enabled` | Enable or disable the authorization policy | `true` |
@@ -110,7 +109,7 @@ helm install network-policy ./network-policy -f custom-values.yaml -n my-app
 ### Network Policy Configuration
 
 | Parameter | Description | Default |
-|-----------|-------------|---------|
+|-----------|-------------|---------||
 | `networkPolicy.name` | Name of the network policy | `default-network-policy` |
 | `networkPolicy.enabled` | Enable or disable the network policy | `true` |
 | `networkPolicy.labels` | Labels to apply to the network policy | `{app: network-security, policy-type: default}` |
@@ -125,7 +124,7 @@ helm install network-policy ./network-policy -f custom-values.yaml -n my-app
 
 ### Example 1: Authorization Policy with Allowed Paths
 
-Create a `values-auth-custom.yaml`:
+Create a `values-auth-custom.yaml` at the root:
 
 ```yaml
 authorizationPolicy:
@@ -140,14 +139,14 @@ authorizationPolicy:
           paths: ["/health", "/ready", "/metrics"]
 ```
 
-Install:
+Install from root:
 ```bash
-helm install auth-policy ./authorization-policy -f values-auth-custom.yaml
+helm install auth-policy ./gitclone/charts/authorization-policy -f values-auth-custom.yaml
 ```
 
 ### Example 2: Network Policy for Microservice
 
-Create a `values-netpol-custom.yaml`:
+Create a `values-netpol-custom.yaml` at the root:
 
 ```yaml
 networkPolicy:
@@ -188,14 +187,14 @@ global:
   namespace: production
 ```
 
-Install:
+Install from root:
 ```bash
-helm install frontend-netpol ./network-policy -f values-netpol-custom.yaml -n production
+helm install frontend-netpol ./gitclone/charts/network-policy -f values-netpol-custom.yaml -n production
 ```
 
 ### Example 3: Allow Traffic from Specific Service Accounts
 
-Create a `values-auth-sa.yaml`:
+Create a `values-auth-sa.yaml` at the root:
 
 ```yaml
 authorizationPolicy:
@@ -214,6 +213,11 @@ authorizationPolicy:
         values: ["default", "production"]
 ```
 
+Install from root:
+```bash
+helm install sa-policy ./gitclone/charts/authorization-policy -f values-auth-sa.yaml
+```
+
 ## Validation
 
 ### Validate Helm Templates
@@ -221,30 +225,30 @@ authorizationPolicy:
 #### Authorization Policy Validation
 
 ```bash
-# Validate with default values
-helm template authorization-policy ./authorization-policy
+# Validate with default values from root
+helm template authorization-policy ./gitclone/charts/authorization-policy
 
-# Validate with custom values
-helm template authorization-policy ./authorization-policy -f custom-values.yaml
+# Validate with custom values from root
+helm template authorization-policy ./gitclone/charts/authorization-policy -f custom-values.yaml
 
-# Dry run installation
-helm install authorization-policy ./authorization-policy --dry-run --debug
+# Dry run installation from root
+helm install authorization-policy ./gitclone/charts/authorization-policy --dry-run --debug
 ```
 
 #### Network Policy Validation
 
 ```bash
-# Validate with default values
-helm template network-policy ./network-policy
+# Validate with default values from root
+helm template network-policy ./gitclone/charts/network-policy
 
-# Validate with custom namespace
-helm template network-policy ./network-policy --namespace my-app
+# Validate with custom namespace from root
+helm template network-policy ./gitclone/charts/network-policy --namespace my-app
 
-# Validate with custom values
-helm template network-policy ./network-policy -f custom-values.yaml
+# Validate with custom values from root
+helm template network-policy ./gitclone/charts/network-policy -f custom-values.yaml
 
-# Dry run installation
-helm install network-policy ./network-policy --dry-run --debug -n my-app
+# Dry run installation from root
+helm install network-policy ./gitclone/charts/network-policy --dry-run --debug -n my-app
 ```
 
 ### Post-Installation Validation
@@ -275,6 +279,31 @@ kubectl describe networkpolicy default-network-policy -n <namespace>
 kubectl run test-pod --image=busybox --rm -it -- /bin/sh
 # Inside the pod, test connectivity:
 # wget -qO- --timeout=2 http://service-name:port
+```
+
+## Quick Start Commands
+
+Here are the most common commands you'll run from the root directory:
+
+```bash
+# Install both charts with default settings
+helm install authorization-policy ./gitclone/charts/authorization-policy
+helm install network-policy ./gitclone/charts/network-policy
+
+# Validate templates before installation
+helm template authorization-policy ./gitclone/charts/authorization-policy
+helm template network-policy ./gitclone/charts/network-policy
+
+# Check installed releases
+helm list -A
+
+# Upgrade existing releases
+helm upgrade authorization-policy ./gitclone/charts/authorization-policy
+helm upgrade network-policy ./gitclone/charts/network-policy
+
+# Uninstall charts
+helm uninstall authorization-policy
+helm uninstall network-policy
 ```
 
 ## Troubleshooting

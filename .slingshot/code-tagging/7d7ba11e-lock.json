@@ -1,0 +1,1744 @@
+{
+  "README.md": {
+    "f": "README.md",
+    "p": "README.md",
+    "v": "v1",
+    "c": {
+      "a24e7e": {
+        "user": "Rohtash Kumar",
+        "model": "claude-opus-4@20250514",
+        "extraContext": "tbd",
+        "timestamp": 1766507133,
+        "hash": "e73b88b8",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentWriteTool"
+      }
+    },
+    "l": {
+      "0": {
+        "chunkId": "a24e7e",
+        "hash": "a1052717",
+        "encoded": "#%20Helm%20Charts%20Repository",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "a24e7e",
+        "hash": "f6991aaf",
+        "encoded": "This%20repository%20contains%20Helm%20charts%20for%20Kubernetes%20security%20policies%20including%20Istio%20Authorization%20Policies%20and%20Kubernetes%20Network%20Policies.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "a24e7e",
+        "hash": "e665c314",
+        "encoded": "##%20Table%20of%20Contents",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "a24e7e",
+        "hash": "4fd5338d",
+        "encoded": "-%20%5BOverview%5D(#overview)",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "a24e7e",
+        "hash": "e7afcb91",
+        "encoded": "-%20%5BPrerequisites%5D(#prerequisites)",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "a24e7e",
+        "hash": "3d130a0f",
+        "encoded": "-%20%5BCharts%5D(#charts)",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "a24e7e",
+        "hash": "b2e2e505",
+        "encoded": "-%20%5BAuthorization%20Policy%20Chart%5D(#authorization-policy-chart)",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "a24e7e",
+        "hash": "3d093a5f",
+        "encoded": "-%20%5BNetwork%20Policy%20Chart%5D(#network-policy-chart)",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "a24e7e",
+        "hash": "cf27a859",
+        "encoded": "-%20%5BInstallation%5D(#installation)",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "a24e7e",
+        "hash": "7df72b2a",
+        "encoded": "-%20%5BConfiguration%5D(#configuration)",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "a24e7e",
+        "hash": "be69a695",
+        "encoded": "-%20%5BUsage%20Examples%5D(#usage-examples)",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "a24e7e",
+        "hash": "b6e1262c",
+        "encoded": "-%20%5BValidation%5D(#validation)",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "a24e7e",
+        "hash": "2ddc55f7",
+        "encoded": "-%20%5BTroubleshooting%5D(#troubleshooting)",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "a24e7e",
+        "hash": "57c7ccf4",
+        "encoded": "-%20%5BContributing%5D(#contributing)",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "a24e7e",
+        "hash": "2acbed31",
+        "encoded": "##%20Overview",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "a24e7e",
+        "hash": "f41c743b",
+        "encoded": "This%20repository%20provides%20two%20main%20Helm%20charts:",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "a24e7e",
+        "hash": "ec7943df",
+        "encoded": "1.%20**authorization-policy**:%20Implements%20Istio%20Authorization%20Policies%20with%20a%20default%20deny-all%20configuration%20for%20the%20istio-system%20namespace",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "a24e7e",
+        "hash": "04d900aa",
+        "encoded": "2.%20**network-policy**:%20Implements%20Kubernetes%20Network%20Policies%20that%20can%20be%20deployed%20to%20any%20namespace%20with%20customizable%20ingress/egress%20rules",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "a24e7e",
+        "hash": "a7671c11",
+        "encoded": "##%20Prerequisites",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "a24e7e",
+        "hash": "20313b80",
+        "encoded": "-%20Kubernetes%20cluster%20(v1.19+)",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "a24e7e",
+        "hash": "93acef74",
+        "encoded": "-%20Helm%203.x%20installed",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "a24e7e",
+        "hash": "fb609c27",
+        "encoded": "-%20For%20authorization-policy%20chart:%20Istio%20service%20mesh%20installed%20and%20configured",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "a24e7e",
+        "hash": "257ef548",
+        "encoded": "-%20kubectl%20configured%20to%20access%20your%20cluster",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "a24e7e",
+        "hash": "b2a0eb21",
+        "encoded": "##%20Charts",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "a24e7e",
+        "hash": "040a880d",
+        "encoded": "###%20Authorization%20Policy%20Chart",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "a24e7e",
+        "hash": "b2db621d",
+        "encoded": "**Location**:%20%60gitclone/charts/authorization-policy%60",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "a24e7e",
+        "hash": "0b2798ba",
+        "encoded": "**Description**:%20This%20chart%20deploys%20an%20Istio%20Authorization%20Policy%20that%20implements%20a%20default%20deny-all%20policy%20in%20the%20istio-system%20namespace.%20This%20ensures%20that%20all%20traffic%20is%20denied%20by%20default%20unless%20explicitly%20allowed.",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "a24e7e",
+        "hash": "598e9302",
+        "encoded": "**Key%20Features**:",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "a24e7e",
+        "hash": "c3a9d076",
+        "encoded": "-%20Default%20deny-all%20policy%20for%20enhanced%20security",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "a24e7e",
+        "hash": "326fd30d",
+        "encoded": "-%20Configurable%20rules%20to%20allow%20specific%20traffic",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "a24e7e",
+        "hash": "f525621b",
+        "encoded": "-%20Support%20for%20workload%20selectors",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "a24e7e",
+        "hash": "5b479bfe",
+        "encoded": "-%20Customizable%20labels%20and%20annotations",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "a24e7e",
+        "hash": "6a1adafd",
+        "encoded": "###%20Network%20Policy%20Chart",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "a24e7e",
+        "hash": "da2bff35",
+        "encoded": "**Location**:%20%60gitclone/charts/network-policy%60",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "a24e7e",
+        "hash": "b4bf8bd0",
+        "encoded": "**Description**:%20This%20chart%20deploys%20Kubernetes%20Network%20Policies%20to%20control%20traffic%20flow%20at%20the%20IP%20address%20or%20port%20level%20(OSI%20layer%203%20or%204).",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "a24e7e",
+        "hash": "a72699c1",
+        "encoded": "**Key%20Features**:",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "a24e7e",
+        "hash": "748a872d",
+        "encoded": "-%20Configurable%20ingress%20and%20egress%20rules",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "a24e7e",
+        "hash": "79191e26",
+        "encoded": "-%20Default%20DNS%20egress%20rules%20included",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "a24e7e",
+        "hash": "37e942c7",
+        "encoded": "-%20Support%20for%20namespace%20and%20pod%20selectors",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "a24e7e",
+        "hash": "8f6889ad",
+        "encoded": "-%20Flexible%20policy%20types%20configuration",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "a24e7e",
+        "hash": "4ff6abaa",
+        "encoded": "##%20Installation",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "a24e7e",
+        "hash": "f867df1c",
+        "encoded": "###%20Adding%20the%20Helm%20Repository",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "a24e7e",
+        "hash": "682a60f5",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "a24e7e",
+        "hash": "9cfb6d02",
+        "encoded": "#%20You're%20already%20at%20the%20root%20directory",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "a24e7e",
+        "hash": "7c164955",
+        "encoded": "#%20No%20need%20to%20clone%20or%20cd%20into%20any%20directory",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "a24e7e",
+        "hash": "9bea3682",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "a24e7e",
+        "hash": "eff8dde1",
+        "encoded": "###%20Installing%20Authorization%20Policy%20Chart",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "a24e7e",
+        "hash": "d8484db5",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "a24e7e",
+        "hash": "02cdc634",
+        "encoded": "#%20Install%20with%20default%20values%20(default%20deny-all%20in%20istio-system)",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "a24e7e",
+        "hash": "0a82430a",
+        "encoded": "helm%20install%20authorization-policy%20./gitclone/charts/authorization-policy",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "a24e7e",
+        "hash": "f5ec63f6",
+        "encoded": "#%20Install%20with%20custom%20values",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "a24e7e",
+        "hash": "78d635ec",
+        "encoded": "helm%20install%20authorization-policy%20./gitclone/charts/authorization-policy%20-f%20custom-values.yaml",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "a24e7e",
+        "hash": "789c1967",
+        "encoded": "#%20Install%20in%20a%20specific%20namespace%20(note:%20the%20policy%20itself%20applies%20to%20istio-system)",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "a24e7e",
+        "hash": "febd8efc",
+        "encoded": "helm%20install%20authorization-policy%20./gitclone/charts/authorization-policy%20-n%20security-policies%20--create-namespace",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "a24e7e",
+        "hash": "59260015",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "a24e7e",
+        "hash": "cd4b663f",
+        "encoded": "###%20Installing%20Network%20Policy%20Chart",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "a24e7e",
+        "hash": "1831addd",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "a24e7e",
+        "hash": "50c1e089",
+        "encoded": "#%20Install%20with%20default%20values%20in%20default%20namespace",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "a24e7e",
+        "hash": "1c489ea3",
+        "encoded": "helm%20install%20network-policy%20./gitclone/charts/network-policy",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "a24e7e",
+        "hash": "b01bfa77",
+        "encoded": "#%20Install%20in%20a%20specific%20namespace",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "a24e7e",
+        "hash": "f998a01a",
+        "encoded": "helm%20install%20network-policy%20./gitclone/charts/network-policy%20-n%20my-app%20--create-namespace",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "a24e7e",
+        "hash": "ab72397f",
+        "encoded": "#%20Install%20with%20custom%20values",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "a24e7e",
+        "hash": "7269bc0c",
+        "encoded": "helm%20install%20network-policy%20./gitclone/charts/network-policy%20-f%20custom-values.yaml%20-n%20my-app",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "a24e7e",
+        "hash": "88209abd",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "a24e7e",
+        "hash": "f2374d2b",
+        "encoded": "##%20Configuration",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "a24e7e",
+        "hash": "5d93913a",
+        "encoded": "###%20Authorization%20Policy%20Configuration",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "a24e7e",
+        "hash": "576c9138",
+        "encoded": "%7C%20Parameter%20%7C%20Description%20%7C%20Default%20%7C",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "a24e7e",
+        "hash": "39e739f8",
+        "encoded": "%7C-----------%7C-------------%7C---------%7C%7C",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "a24e7e",
+        "hash": "f67d19f6",
+        "encoded": "%7C%20%60authorizationPolicy.name%60%20%7C%20Name%20of%20the%20authorization%20policy%20%7C%20%60default-deny-all%60%20%7C",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "a24e7e",
+        "hash": "1ebb75b5",
+        "encoded": "%7C%20%60authorizationPolicy.namespace%60%20%7C%20Namespace%20where%20the%20policy%20will%20be%20applied%20%7C%20%60istio-system%60%20%7C",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "a24e7e",
+        "hash": "ec4b2bf1",
+        "encoded": "%7C%20%60authorizationPolicy.enabled%60%20%7C%20Enable%20or%20disable%20the%20authorization%20policy%20%7C%20%60true%60%20%7C",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "a24e7e",
+        "hash": "70124dc6",
+        "encoded": "%7C%20%60authorizationPolicy.labels%60%20%7C%20Labels%20to%20apply%20to%20the%20authorization%20policy%20%7C%20%60%7Bapp:%20istio-security,%20policy-type:%20default-deny%7D%60%20%7C",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "a24e7e",
+        "hash": "8bd311f3",
+        "encoded": "%7C%20%60authorizationPolicy.annotations%60%20%7C%20Annotations%20to%20apply%20to%20the%20authorization%20policy%20%7C%20%60%7B%7D%60%20%7C",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "a24e7e",
+        "hash": "7f0dae51",
+        "encoded": "%7C%20%60authorizationPolicy.selector%60%20%7C%20Selector%20for%20workloads%20to%20apply%20the%20policy%20%7C%20%60%7B%7D%60%20(applies%20to%20all)%20%7C",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "a24e7e",
+        "hash": "4c06efc0",
+        "encoded": "%7C%20%60authorizationPolicy.action%60%20%7C%20Action%20to%20take%20(ALLOW,%20DENY,%20AUDIT,%20CUSTOM)%20%7C%20%60DENY%60%20%7C",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "a24e7e",
+        "hash": "99b283e8",
+        "encoded": "%7C%20%60authorizationPolicy.rules%60%20%7C%20Rules%20for%20the%20authorization%20policy%20%7C%20%60%5B%5D%60%20(deny%20all)%20%7C",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "a24e7e",
+        "hash": "c7c69ccb",
+        "encoded": "###%20Network%20Policy%20Configuration",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "a24e7e",
+        "hash": "4818c19f",
+        "encoded": "%7C%20Parameter%20%7C%20Description%20%7C%20Default%20%7C",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "a24e7e",
+        "hash": "e149511b",
+        "encoded": "%7C-----------%7C-------------%7C---------%7C%7C",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "a24e7e",
+        "hash": "c00a2138",
+        "encoded": "%7C%20%60networkPolicy.name%60%20%7C%20Name%20of%20the%20network%20policy%20%7C%20%60default-network-policy%60%20%7C",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "a24e7e",
+        "hash": "326017f5",
+        "encoded": "%7C%20%60networkPolicy.enabled%60%20%7C%20Enable%20or%20disable%20the%20network%20policy%20%7C%20%60true%60%20%7C",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "a24e7e",
+        "hash": "823e71d3",
+        "encoded": "%7C%20%60networkPolicy.labels%60%20%7C%20Labels%20to%20apply%20to%20the%20network%20policy%20%7C%20%60%7Bapp:%20network-security,%20policy-type:%20default%7D%60%20%7C",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "a24e7e",
+        "hash": "52532eb6",
+        "encoded": "%7C%20%60networkPolicy.annotations%60%20%7C%20Annotations%20to%20apply%20to%20the%20network%20policy%20%7C%20%60%7B%7D%60%20%7C",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "a24e7e",
+        "hash": "d7fb61fc",
+        "encoded": "%7C%20%60networkPolicy.podSelector%60%20%7C%20Pod%20selector%20for%20the%20network%20policy%20%7C%20%60%7B%7D%60%20(applies%20to%20all%20pods)%20%7C",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "a24e7e",
+        "hash": "3324f219",
+        "encoded": "%7C%20%60networkPolicy.policyTypes%60%20%7C%20Policy%20types%20(Ingress,%20Egress,%20or%20both)%20%7C%20%60%5BIngress,%20Egress%5D%60%20%7C",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "a24e7e",
+        "hash": "69ce7211",
+        "encoded": "%7C%20%60networkPolicy.ingress.rules%60%20%7C%20Ingress%20rules%20%7C%20%60%5B%5D%60%20(deny%20all%20ingress)%20%7C",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "a24e7e",
+        "hash": "123da152",
+        "encoded": "%7C%20%60networkPolicy.egress.rules%60%20%7C%20Egress%20rules%20%7C%20DNS%20rules%20to%20kube-system%20%7C",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "a24e7e",
+        "hash": "f2861a0c",
+        "encoded": "%7C%20%60global.namespace%60%20%7C%20Namespace%20where%20the%20network%20policy%20will%20be%20deployed%20%7C%20%60default%60%20%7C",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "a24e7e",
+        "hash": "087b235b",
+        "encoded": "##%20Usage%20Examples",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "a24e7e",
+        "hash": "ded32671",
+        "encoded": "###%20Example%201:%20Authorization%20Policy%20with%20Allowed%20Paths",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "a24e7e",
+        "hash": "646b88e8",
+        "encoded": "Create%20a%20%60values-auth-custom.yaml%60%20at%20the%20root:",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "a24e7e",
+        "hash": "6df4593d",
+        "encoded": "%60%60%60yaml",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "a24e7e",
+        "hash": "99d03e67",
+        "encoded": "authorizationPolicy:",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "a24e7e",
+        "hash": "99f319d1",
+        "encoded": "name:%20allow-health-checks",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "a24e7e",
+        "hash": "541e8914",
+        "encoded": "namespace:%20istio-system",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "a24e7e",
+        "hash": "893618a5",
+        "encoded": "enabled:%20true",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "a24e7e",
+        "hash": "632927ca",
+        "encoded": "action:%20DENY",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "a24e7e",
+        "hash": "dd3b3dfa",
+        "encoded": "rules:",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "a24e7e",
+        "hash": "d834502c",
+        "encoded": "-%20to:",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "a24e7e",
+        "hash": "b0448572",
+        "encoded": "-%20operation:",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "a24e7e",
+        "hash": "4b15fa05",
+        "encoded": "methods:%20%5B%22GET%22%5D",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "a24e7e",
+        "hash": "03466a1f",
+        "encoded": "paths:%20%5B%22/health%22,%20%22/ready%22,%20%22/metrics%22%5D",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "a24e7e",
+        "hash": "1e477eab",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "a24e7e",
+        "hash": "58cd6902",
+        "encoded": "Install%20from%20root:",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "a24e7e",
+        "hash": "312a8a6c",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "a24e7e",
+        "hash": "c6cbed49",
+        "encoded": "helm%20install%20auth-policy%20./gitclone/charts/authorization-policy%20-f%20values-auth-custom.yaml",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "a24e7e",
+        "hash": "b5b113d9",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "a24e7e",
+        "hash": "c17e8dbe",
+        "encoded": "###%20Example%202:%20Network%20Policy%20for%20Microservice",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "a24e7e",
+        "hash": "d2cddce1",
+        "encoded": "Create%20a%20%60values-netpol-custom.yaml%60%20at%20the%20root:",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "a24e7e",
+        "hash": "6e569639",
+        "encoded": "%60%60%60yaml",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "a24e7e",
+        "hash": "15fc6c9e",
+        "encoded": "networkPolicy:",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "a24e7e",
+        "hash": "60b3d4e0",
+        "encoded": "name:%20frontend-network-policy",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "a24e7e",
+        "hash": "05051d66",
+        "encoded": "enabled:%20true",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "a24e7e",
+        "hash": "308733e0",
+        "encoded": "podSelector:",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "a24e7e",
+        "hash": "5980602e",
+        "encoded": "matchLabels:",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "a24e7e",
+        "hash": "10e095ff",
+        "encoded": "app:%20frontend",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "a24e7e",
+        "hash": "f825ffd7",
+        "encoded": "ingress:",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "a24e7e",
+        "hash": "d58b9633",
+        "encoded": "rules:",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "a24e7e",
+        "hash": "3dc64239",
+        "encoded": "-%20from:",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "a24e7e",
+        "hash": "9cbae9cd",
+        "encoded": "-%20namespaceSelector:",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "a24e7e",
+        "hash": "1340bf67",
+        "encoded": "matchLabels:",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "a24e7e",
+        "hash": "fb9e629a",
+        "encoded": "name:%20ingress-nginx",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "a24e7e",
+        "hash": "79782e20",
+        "encoded": "ports:",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "a24e7e",
+        "hash": "1f140add",
+        "encoded": "-%20protocol:%20TCP",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "a24e7e",
+        "hash": "3da6d431",
+        "encoded": "port:%208080",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "a24e7e",
+        "hash": "e282c609",
+        "encoded": "egress:",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "a24e7e",
+        "hash": "bc03cdf9",
+        "encoded": "rules:",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "a24e7e",
+        "hash": "30c42b1a",
+        "encoded": "#%20Allow%20DNS",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "a24e7e",
+        "hash": "aaa6d534",
+        "encoded": "-%20to:",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "a24e7e",
+        "hash": "0bd9e4b8",
+        "encoded": "-%20namespaceSelector:",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "a24e7e",
+        "hash": "1111bdfd",
+        "encoded": "matchLabels:",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "a24e7e",
+        "hash": "fcdfd27d",
+        "encoded": "name:%20kube-system",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "a24e7e",
+        "hash": "02f3d0ae",
+        "encoded": "ports:",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "a24e7e",
+        "hash": "0f3a9cdb",
+        "encoded": "-%20protocol:%20UDP",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "a24e7e",
+        "hash": "d7ca544a",
+        "encoded": "port:%2053",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "a24e7e",
+        "hash": "45896b35",
+        "encoded": "#%20Allow%20backend%20service",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "a24e7e",
+        "hash": "5158cd73",
+        "encoded": "-%20to:",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "a24e7e",
+        "hash": "c9685725",
+        "encoded": "-%20podSelector:",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "a24e7e",
+        "hash": "7bfd459f",
+        "encoded": "matchLabels:",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "a24e7e",
+        "hash": "e255c66e",
+        "encoded": "app:%20backend",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "a24e7e",
+        "hash": "06b75509",
+        "encoded": "ports:",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "a24e7e",
+        "hash": "1a69c869",
+        "encoded": "-%20protocol:%20TCP",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "a24e7e",
+        "hash": "d7068f57",
+        "encoded": "port:%209090",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "a24e7e",
+        "hash": "943bf6e9",
+        "encoded": "global:",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "a24e7e",
+        "hash": "61e4b4eb",
+        "encoded": "namespace:%20production",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "a24e7e",
+        "hash": "01a8494f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "a24e7e",
+        "hash": "f69a7ea4",
+        "encoded": "Install%20from%20root:",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "a24e7e",
+        "hash": "24739de3",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "a24e7e",
+        "hash": "4c173dbb",
+        "encoded": "helm%20install%20frontend-netpol%20./gitclone/charts/network-policy%20-f%20values-netpol-custom.yaml%20-n%20production",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "a24e7e",
+        "hash": "82aa2141",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "a24e7e",
+        "hash": "f4b069d3",
+        "encoded": "###%20Example%203:%20Allow%20Traffic%20from%20Specific%20Service%20Accounts",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "a24e7e",
+        "hash": "c6ed3998",
+        "encoded": "Create%20a%20%60values-auth-sa.yaml%60%20at%20the%20root:",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "a24e7e",
+        "hash": "eb3287a2",
+        "encoded": "%60%60%60yaml",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "a24e7e",
+        "hash": "ab87c96f",
+        "encoded": "authorizationPolicy:",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "a24e7e",
+        "hash": "8f087b20",
+        "encoded": "name:%20allow-service-accounts",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "a24e7e",
+        "hash": "6ffa5bd3",
+        "encoded": "namespace:%20istio-system",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "a24e7e",
+        "hash": "b201b54d",
+        "encoded": "enabled:%20true",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "a24e7e",
+        "hash": "52bdf663",
+        "encoded": "action:%20ALLOW",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "a24e7e",
+        "hash": "e4f555b8",
+        "encoded": "rules:",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "a24e7e",
+        "hash": "58651ade",
+        "encoded": "-%20from:",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "a24e7e",
+        "hash": "02f0d538",
+        "encoded": "-%20source:",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "a24e7e",
+        "hash": "b8c2d6b3",
+        "encoded": "principals:",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "a24e7e",
+        "hash": "87ef7457",
+        "encoded": "-%20%22cluster.local/ns/default/sa/frontend-sa%22",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "a24e7e",
+        "hash": "bb3f5adb",
+        "encoded": "-%20%22cluster.local/ns/production/sa/backend-sa%22",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "a24e7e",
+        "hash": "a79ff179",
+        "encoded": "-%20when:",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "a24e7e",
+        "hash": "f1b3f374",
+        "encoded": "-%20key:%20source.namespace",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "a24e7e",
+        "hash": "20469ca9",
+        "encoded": "values:%20%5B%22default%22,%20%22production%22%5D",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "a24e7e",
+        "hash": "5e2207ac",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "a24e7e",
+        "hash": "c3f6cf4e",
+        "encoded": "Install%20from%20root:",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "a24e7e",
+        "hash": "72be7ada",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "a24e7e",
+        "hash": "6a9faddf",
+        "encoded": "helm%20install%20sa-policy%20./gitclone/charts/authorization-policy%20-f%20values-auth-sa.yaml",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "a24e7e",
+        "hash": "918a6196",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "a24e7e",
+        "hash": "0d12dded",
+        "encoded": "##%20Validation",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "a24e7e",
+        "hash": "58eb9233",
+        "encoded": "###%20Validate%20Helm%20Templates",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "a24e7e",
+        "hash": "ccb0f825",
+        "encoded": "####%20Authorization%20Policy%20Validation",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "a24e7e",
+        "hash": "82004b21",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "a24e7e",
+        "hash": "99e4a232",
+        "encoded": "#%20Validate%20with%20default%20values%20from%20root",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "a24e7e",
+        "hash": "d1883127",
+        "encoded": "helm%20template%20authorization-policy%20./gitclone/charts/authorization-policy",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "a24e7e",
+        "hash": "91fc953e",
+        "encoded": "#%20Validate%20with%20custom%20values%20from%20root",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "a24e7e",
+        "hash": "3145c6b3",
+        "encoded": "helm%20template%20authorization-policy%20./gitclone/charts/authorization-policy%20-f%20custom-values.yaml",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "a24e7e",
+        "hash": "2da00573",
+        "encoded": "#%20Dry%20run%20installation%20from%20root",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "a24e7e",
+        "hash": "7092979c",
+        "encoded": "helm%20install%20authorization-policy%20./gitclone/charts/authorization-policy%20--dry-run%20--debug",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "a24e7e",
+        "hash": "74c5597a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "a24e7e",
+        "hash": "24fcd54b",
+        "encoded": "####%20Network%20Policy%20Validation",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "a24e7e",
+        "hash": "a47a19f9",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "a24e7e",
+        "hash": "a8cbd261",
+        "encoded": "#%20Validate%20with%20default%20values%20from%20root",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "a24e7e",
+        "hash": "d656077f",
+        "encoded": "helm%20template%20network-policy%20./gitclone/charts/network-policy",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "a24e7e",
+        "hash": "a51ed71b",
+        "encoded": "#%20Validate%20with%20custom%20namespace%20from%20root",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "a24e7e",
+        "hash": "89e31daf",
+        "encoded": "helm%20template%20network-policy%20./gitclone/charts/network-policy%20--namespace%20my-app",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "a24e7e",
+        "hash": "4bb6ae25",
+        "encoded": "#%20Validate%20with%20custom%20values%20from%20root",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "a24e7e",
+        "hash": "25dca958",
+        "encoded": "helm%20template%20network-policy%20./gitclone/charts/network-policy%20-f%20custom-values.yaml",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "a24e7e",
+        "hash": "46e8ec56",
+        "encoded": "#%20Dry%20run%20installation%20from%20root",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "a24e7e",
+        "hash": "a7240303",
+        "encoded": "helm%20install%20network-policy%20./gitclone/charts/network-policy%20--dry-run%20--debug%20-n%20my-app",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "a24e7e",
+        "hash": "f235f25a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "a24e7e",
+        "hash": "d93c503b",
+        "encoded": "###%20Post-Installation%20Validation",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "a24e7e",
+        "hash": "b6d5aa34",
+        "encoded": "####%20Verify%20Authorization%20Policy",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "a24e7e",
+        "hash": "88333cec",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "a24e7e",
+        "hash": "ca7bb041",
+        "encoded": "#%20Check%20if%20the%20authorization%20policy%20is%20created",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "a24e7e",
+        "hash": "e83e7c57",
+        "encoded": "kubectl%20get%20authorizationpolicy%20-n%20istio-system",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "a24e7e",
+        "hash": "06ad5422",
+        "encoded": "#%20Describe%20the%20policy",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "a24e7e",
+        "hash": "0b00bc8e",
+        "encoded": "kubectl%20describe%20authorizationpolicy%20default-deny-all%20-n%20istio-system",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "a24e7e",
+        "hash": "fd0011f7",
+        "encoded": "#%20Test%20the%20policy%20(should%20be%20denied)",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "a24e7e",
+        "hash": "32b75069",
+        "encoded": "kubectl%20exec%20-it%20&lt;pod-name&gt;%20-n%20&lt;namespace&gt;%20--%20curl%20http://service.istio-system.svc.cluster.local",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "a24e7e",
+        "hash": "825bf4f1",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "a24e7e",
+        "hash": "e062013c",
+        "encoded": "####%20Verify%20Network%20Policy",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "a24e7e",
+        "hash": "ef53a24a",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "a24e7e",
+        "hash": "b6334a0d",
+        "encoded": "#%20Check%20if%20the%20network%20policy%20is%20created",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "a24e7e",
+        "hash": "0da22d07",
+        "encoded": "kubectl%20get%20networkpolicy%20-n%20&lt;namespace&gt;",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "a24e7e",
+        "hash": "83ddb77a",
+        "encoded": "#%20Describe%20the%20policy",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "a24e7e",
+        "hash": "f61632d4",
+        "encoded": "kubectl%20describe%20networkpolicy%20default-network-policy%20-n%20&lt;namespace&gt;",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "a24e7e",
+        "hash": "707f48a2",
+        "encoded": "#%20Test%20connectivity%20(use%20a%20test%20pod)",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "a24e7e",
+        "hash": "cb71e299",
+        "encoded": "kubectl%20run%20test-pod%20--image=busybox%20--rm%20-it%20--%20/bin/sh",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "a24e7e",
+        "hash": "0bf85ade",
+        "encoded": "#%20Inside%20the%20pod,%20test%20connectivity:",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "a24e7e",
+        "hash": "68659862",
+        "encoded": "#%20wget%20-qO-%20--timeout=2%20http://service-name:port",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "a24e7e",
+        "hash": "be4faeb5",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "a24e7e",
+        "hash": "75c95921",
+        "encoded": "##%20Quick%20Start%20Commands",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "a24e7e",
+        "hash": "182e0f83",
+        "encoded": "Here%20are%20the%20most%20common%20commands%20you'll%20run%20from%20the%20root%20directory:",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "a24e7e",
+        "hash": "d90d52a8",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "a24e7e",
+        "hash": "8892fdca",
+        "encoded": "#%20Install%20both%20charts%20with%20default%20settings",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "a24e7e",
+        "hash": "4ec6610d",
+        "encoded": "helm%20install%20authorization-policy%20./gitclone/charts/authorization-policy",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "a24e7e",
+        "hash": "489c81ce",
+        "encoded": "helm%20install%20network-policy%20./gitclone/charts/network-policy",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "a24e7e",
+        "hash": "cf00bd29",
+        "encoded": "#%20Validate%20templates%20before%20installation",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "a24e7e",
+        "hash": "a26a6e94",
+        "encoded": "helm%20template%20authorization-policy%20./gitclone/charts/authorization-policy",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "a24e7e",
+        "hash": "7d235fb8",
+        "encoded": "helm%20template%20network-policy%20./gitclone/charts/network-policy",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "a24e7e",
+        "hash": "6575fed2",
+        "encoded": "#%20Check%20installed%20releases",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "a24e7e",
+        "hash": "496170bb",
+        "encoded": "helm%20list%20-A",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "a24e7e",
+        "hash": "fc91b83f",
+        "encoded": "#%20Upgrade%20existing%20releases",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "a24e7e",
+        "hash": "9a3d7cab",
+        "encoded": "helm%20upgrade%20authorization-policy%20./gitclone/charts/authorization-policy",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "a24e7e",
+        "hash": "b01c09c3",
+        "encoded": "helm%20upgrade%20network-policy%20./gitclone/charts/network-policy",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "a24e7e",
+        "hash": "78534aba",
+        "encoded": "#%20Uninstall%20charts",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "a24e7e",
+        "hash": "55e268a8",
+        "encoded": "helm%20uninstall%20authorization-policy",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "a24e7e",
+        "hash": "856a6fe4",
+        "encoded": "helm%20uninstall%20network-policy",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "a24e7e",
+        "hash": "0f5d1418",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "a24e7e",
+        "hash": "47d71621",
+        "encoded": "##%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "a24e7e",
+        "hash": "cffa5ba9",
+        "encoded": "###%20Common%20Issues",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "a24e7e",
+        "hash": "06872f1d",
+        "encoded": "####%20Authorization%20Policy%20Not%20Working",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "a24e7e",
+        "hash": "02c59cd6",
+        "encoded": "1.%20**Check%20Istio%20Installation**:",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "a24e7e",
+        "hash": "20e02ab1",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "a24e7e",
+        "hash": "86703b89",
+        "encoded": "kubectl%20get%20pods%20-n%20istio-system",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "a24e7e",
+        "hash": "265ed87f",
+        "encoded": "istioctl%20version",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "a24e7e",
+        "hash": "b71bac29",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "a24e7e",
+        "hash": "f7def003",
+        "encoded": "2.%20**Verify%20Sidecar%20Injection**:",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "a24e7e",
+        "hash": "2d1be927",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "a24e7e",
+        "hash": "adccaf4b",
+        "encoded": "kubectl%20get%20pods%20-n%20&lt;your-namespace&gt;%20-o%20jsonpath='%7Brange%20.items%5B*%5D%7D%7B.metadata.name%7D%7B%22%5Ct%22%7D%7B.spec.containers%5B*%5D.name%7D%7B%22%5Cn%22%7D%7Bend%7D'",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "a24e7e",
+        "hash": "4b8a42bc",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "a24e7e",
+        "hash": "91f63041",
+        "encoded": "3.%20**Check%20Policy%20Status**:",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "a24e7e",
+        "hash": "04d6fe69",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "a24e7e",
+        "hash": "c2936c42",
+        "encoded": "istioctl%20analyze%20-n%20istio-system",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "a24e7e",
+        "hash": "708f9399",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "a24e7e",
+        "hash": "0edc654c",
+        "encoded": "####%20Network%20Policy%20Not%20Blocking%20Traffic",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "a24e7e",
+        "hash": "a738793e",
+        "encoded": "1.%20**Verify%20CNI%20Plugin%20Support**:",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "a24e7e",
+        "hash": "d2e094da",
+        "encoded": "-%20Ensure%20your%20CNI%20plugin%20supports%20Network%20Policies%20(e.g.,%20Calico,%20Cilium,%20Weave%20Net)",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "a24e7e",
+        "hash": "99f711c2",
+        "encoded": "2.%20**Check%20Pod%20Labels**:",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "a24e7e",
+        "hash": "465ebf9d",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "a24e7e",
+        "hash": "28eb7341",
+        "encoded": "kubectl%20get%20pods%20-n%20&lt;namespace&gt;%20--show-labels",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "a24e7e",
+        "hash": "e1b66d2b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "a24e7e",
+        "hash": "649db59f",
+        "encoded": "3.%20**Test%20with%20netshoot**:",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "a24e7e",
+        "hash": "e1bbb44e",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "a24e7e",
+        "hash": "0750185c",
+        "encoded": "kubectl%20run%20tmp-shell%20--rm%20-i%20--tty%20--image%20nicolaka/netshoot%20--%20/bin/bash",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "a24e7e",
+        "hash": "5718e4dc",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "a24e7e",
+        "hash": "8a8266b2",
+        "encoded": "###%20Debug%20Commands",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "a24e7e",
+        "hash": "11f3eaa0",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "a24e7e",
+        "hash": "1fd1a6e5",
+        "encoded": "#%20List%20all%20policies",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "a24e7e",
+        "hash": "96a4bf51",
+        "encoded": "kubectl%20get%20authorizationpolicy%20-A",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "a24e7e",
+        "hash": "37560b58",
+        "encoded": "kubectl%20get%20networkpolicy%20-A",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "a24e7e",
+        "hash": "c9d445ae",
+        "encoded": "#%20Check%20Helm%20releases",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "a24e7e",
+        "hash": "df4580ec",
+        "encoded": "helm%20list%20-A",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "a24e7e",
+        "hash": "bc99e9c6",
+        "encoded": "#%20Get%20Helm%20values",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "a24e7e",
+        "hash": "de572465",
+        "encoded": "helm%20get%20values%20&lt;release-name&gt;%20-n%20&lt;namespace&gt;",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "a24e7e",
+        "hash": "8be85505",
+        "encoded": "#%20Check%20events",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "a24e7e",
+        "hash": "60dea09e",
+        "encoded": "kubectl%20get%20events%20-n%20&lt;namespace&gt;%20--sort-by='.lastTimestamp'",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "a24e7e",
+        "hash": "1b24b5c7",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "a24e7e",
+        "hash": "c68956ef",
+        "encoded": "##%20Contributing",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "a24e7e",
+        "hash": "794cfb21",
+        "encoded": "1.%20Fork%20the%20repository",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "a24e7e",
+        "hash": "47f235f8",
+        "encoded": "2.%20Create%20a%20feature%20branch%20(%60git%20checkout%20-b%20feature/amazing-feature%60)",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "a24e7e",
+        "hash": "3204c1e9",
+        "encoded": "3.%20Commit%20your%20changes%20(%60git%20commit%20-m%20'Add%20some%20amazing%20feature'%60)",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "a24e7e",
+        "hash": "a829ac4a",
+        "encoded": "4.%20Push%20to%20the%20branch%20(%60git%20push%20origin%20feature/amazing-feature%60)",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "a24e7e",
+        "hash": "f3eec4d9",
+        "encoded": "5.%20Open%20a%20Pull%20Request",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "a24e7e",
+        "hash": "0f567076",
+        "encoded": "###%20Development%20Guidelines",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "a24e7e",
+        "hash": "37ea9cf7",
+        "encoded": "-%20Update%20chart%20version%20in%20%60Chart.yaml%60%20for%20any%20changes",
+        "prevChunkIds": []
+      },
+      "373": {
+        "chunkId": "a24e7e",
+        "hash": "9022f749",
+        "encoded": "-%20Update%20README.md%20with%20new%20configuration%20options",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "a24e7e",
+        "hash": "fcb900cb",
+        "encoded": "-%20Test%20charts%20with%20%60helm%20lint%60%20before%20committing",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "a24e7e",
+        "hash": "568d546a",
+        "encoded": "-%20Include%20examples%20for%20new%20features",
+        "prevChunkIds": []
+      },
+      "377": {
+        "chunkId": "a24e7e",
+        "hash": "6458c8fa",
+        "encoded": "##%20License",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "a24e7e",
+        "hash": "7c26aafe",
+        "encoded": "This%20project%20is%20licensed%20under%20the%20MIT%20License%20-%20see%20the%20LICENSE%20file%20for%20details.",
+        "prevChunkIds": []
+      },
+      "381": {
+        "chunkId": "a24e7e",
+        "hash": "de99cbe1",
+        "encoded": "##%20Support",
+        "prevChunkIds": []
+      },
+      "383": {
+        "chunkId": "a24e7e",
+        "hash": "efbdc7bd",
+        "encoded": "For%20issues,%20questions,%20or%20contributions,%20please%20open%20an%20issue%20in%20the%20GitHub%20repository.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
