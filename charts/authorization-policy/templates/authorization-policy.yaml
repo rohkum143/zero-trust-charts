@@ -18,8 +18,17 @@ spec:
     {{- toYaml . | nindent 4 }}
   {{- end }}
   action: {{ .Values.authorizationPolicy.action }}
+  {{- if .Values.authorizationPolicy.rules }}
+  rules:
+    {{- toYaml .Values.authorizationPolicy.rules | nindent 4 }}
+  {{- else if eq .Values.authorizationPolicy.action "DENY" }}
+  # For DENY policies, we need at least an empty rule to trigger
+  rules:
+    - {}
+  {{- else }}
   {{- with .Values.authorizationPolicy.rules }}
   rules:
     {{- toYaml . | nindent 4 }}
+  {{- end }}
   {{- end }}
 {{- end }}
