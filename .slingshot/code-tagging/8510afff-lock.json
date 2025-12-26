@@ -1,0 +1,118 @@
+{
+  "charts/network-policy/Chart.yaml": {
+    "f": "Chart.yaml",
+    "p": "charts/network-policy/Chart.yaml",
+    "v": "v1",
+    "c": {
+      "2f12d2": {
+        "user": "Rohtash Kumar",
+        "model": "claude-opus-4@20250514",
+        "extraContext": "tbd",
+        "timestamp": 1766505354,
+        "hash": "ca426d12",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentWriteTool"
+      }
+    },
+    "l": {
+      "0": {
+        "chunkId": "2f12d2",
+        "hash": "263e5fd4",
+        "encoded": "apiVersion:%20v2",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "2f12d2",
+        "hash": "ef580a6c",
+        "encoded": "name:%20network-policy",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "2f12d2",
+        "hash": "4dcc5204",
+        "encoded": "description:%20A%20Helm%20chart%20for%20Kubernetes%20Network%20Policies",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "2f12d2",
+        "hash": "c1afe734",
+        "encoded": "type:%20application",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "2f12d2",
+        "hash": "a3491eb3",
+        "encoded": "version:%200.1.0",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "2f12d2",
+        "hash": "7dad14c1",
+        "encoded": "appVersion:%20%221.0%22",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "2f12d2",
+        "hash": "3e28f3fc",
+        "encoded": "keywords:",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "2f12d2",
+        "hash": "4f0b289a",
+        "encoded": "-%20network",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "2f12d2",
+        "hash": "37b60c83",
+        "encoded": "-%20security",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "2f12d2",
+        "hash": "cfe9631a",
+        "encoded": "-%20policy",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "2f12d2",
+        "hash": "f2d562a7",
+        "encoded": "-%20kubernetes",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "2f12d2",
+        "hash": "f8b32ba1",
+        "encoded": "maintainers:",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "2f12d2",
+        "hash": "4df0527d",
+        "encoded": "-%20name:%20DevOps%20Team",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "2f12d2",
+        "hash": "2ac69e7a",
+        "encoded": "home:%20https://github.com/your-org/charts",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "2f12d2",
+        "hash": "abeabbc1",
+        "encoded": "sources:",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "2f12d2",
+        "hash": "e2334b9c",
+        "encoded": "-%20https://github.com/your-org/charts/tree/main/charts/network-policy",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

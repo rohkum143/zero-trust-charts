@@ -1,0 +1,81 @@
+# Default values for network-policy.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# Network Policy configuration
+networkPolicy:
+  # Name of the network policy
+  name: default-network-policy
+  
+  # Enable or disable the network policy
+  enabled: true
+  
+  # Labels to apply to the network policy
+  labels:
+    app: network-security
+    policy-type: default
+  
+  # Annotations to apply to the network policy
+  annotations: {}
+  
+  # Pod selector for the network policy
+  # Leave empty to apply to all pods in the namespace
+  podSelector:
+    matchLabels: {}
+  
+  # Policy types (Ingress, Egress, or both)
+  policyTypes:
+    - Ingress
+    - Egress
+  
+  # Ingress rules
+  ingress:
+    # Default deny all ingress if no rules specified
+    rules: []
+    # Example ingress rules:
+    # rules:
+    #   - from:
+    #     - namespaceSelector:
+    #         matchLabels:
+    #           name: allowed-namespace
+    #     - podSelector:
+    #         matchLabels:
+    #           app: allowed-app
+    #     ports:
+    #     - protocol: TCP
+    #       port: 80
+    #     - protocol: TCP
+    #       port: 443
+  
+  # Egress rules
+  egress:
+    # Default allow DNS and other essential services
+    rules:
+      # Allow DNS
+      - to:
+        - namespaceSelector:
+            matchLabels:
+              name: kube-system
+        - podSelector:
+            matchLabels:
+              k8s-app: kube-dns
+        ports:
+        - protocol: UDP
+          port: 53
+        - protocol: TCP
+          port: 53
+    # Example additional egress rules:
+    # - to:
+    #   - ipBlock:
+    #       cidr: 10.0.0.0/8
+    #       except:
+    #       - 10.0.1.0/24
+    #   ports:
+    #   - protocol: TCP
+    #     port: 443
+
+# Global settings
+global:
+  # Namespace where the network policy will be deployed
+  # Can be overridden during installation with --namespace flag
+  namespace: default

@@ -1,0 +1,67 @@
+apiVersion: v1
+entries:
+  authorization-policy:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-12-26T11:48:08.046477Z"
+    description: A Helm chart for Istio Authorization Policy with default deny in
+      istio-system
+    digest: d9a857ffcfca846585f7a7d232ca498cdeb8fe20dd73e671b24a977c08e32f96
+    home: https://github.com/your-org/charts
+    keywords:
+    - istio
+    - authorization
+    - security
+    - policy
+    maintainers:
+    - name: DevOps Team
+    name: authorization-policy
+    sources:
+    - https://github.com/your-org/charts/tree/main/charts/authorization-policy
+    type: application
+    urls:
+    - https://rohkum143.github.io/zero-trust-charts/authorization-policy-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-12-26T11:48:08.047197Z"
+    description: A Helm chart for Istio Authorization Policy with default deny in
+      istio-system
+    digest: b75f9753e25a391482a70103d3214015c38a6e2cc44ab91e7b05dba1a04b2ae8
+    home: https://github.com/your-org/charts
+    keywords:
+    - istio
+    - authorization
+    - security
+    - policy
+    maintainers:
+    - name: DevOps Team
+    name: authorization-policy
+    sources:
+    - https://github.com/your-org/charts/tree/main/charts/authorization-policy
+    type: application
+    urls:
+    - https://rohkum143.github.io/zero-trust-charts/authorization-policy/authorization-policy-0.1.0.tgz
+    version: 0.1.0
+  network-policy:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-12-26T11:48:08.046808Z"
+    description: A Helm chart for Kubernetes Network Policies
+    digest: 582fe16c7b3fbf58448e59b16e98fe422df7be8817915e5f98b146bebd7ffcf3
+    home: https://github.com/your-org/charts
+    keywords:
+    - network
+    - security
+    - policy
+    - kubernetes
+    maintainers:
+    - name: DevOps Team
+    name: network-policy
+    sources:
+    - https://github.com/your-org/charts/tree/main/charts/network-policy
+    type: application
+    urls:
+    - https://rohkum143.github.io/zero-trust-charts/network-policy-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-12-26T11:48:08.04554Z"

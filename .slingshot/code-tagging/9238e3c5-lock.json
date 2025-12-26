@@ -1,0 +1,172 @@
+{
+  "charts/authorization-policy/templates/authorization-policy.yaml": {
+    "f": "authorization-policy.yaml",
+    "p": "charts/authorization-policy/templates/authorization-policy.yaml",
+    "v": "v1",
+    "c": {
+      "0c9b05": {
+        "user": "Rohtash Kumar",
+        "model": "claude-opus-4@20250514",
+        "extraContext": "tbd",
+        "timestamp": 1766505354,
+        "hash": "f391de5e",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentWriteTool"
+      }
+    },
+    "l": {
+      "0": {
+        "chunkId": "0c9b05",
+        "hash": "26240e4c",
+        "encoded": "%7B%7B-%20if%20.Values.authorizationPolicy.enabled%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "0c9b05",
+        "hash": "24eea383",
+        "encoded": "apiVersion:%20security.istio.io/v1beta1",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "0c9b05",
+        "hash": "5adc8ef4",
+        "encoded": "kind:%20AuthorizationPolicy",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "0c9b05",
+        "hash": "b2474965",
+        "encoded": "metadata:",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "0c9b05",
+        "hash": "a4df9609",
+        "encoded": "name:%20%7B%7B%20.Values.authorizationPolicy.name%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "0c9b05",
+        "hash": "eb12ff2d",
+        "encoded": "namespace:%20%7B%7B%20.Values.authorizationPolicy.namespace%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "0c9b05",
+        "hash": "71d1bd2f",
+        "encoded": "%7B%7B-%20with%20.Values.authorizationPolicy.labels%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "0c9b05",
+        "hash": "b1edda0e",
+        "encoded": "labels:",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "0c9b05",
+        "hash": "3bf9309f",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "0c9b05",
+        "hash": "4846aae0",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "0c9b05",
+        "hash": "b7a99436",
+        "encoded": "%7B%7B-%20with%20.Values.authorizationPolicy.annotations%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "0c9b05",
+        "hash": "6f9c6edc",
+        "encoded": "annotations:",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "0c9b05",
+        "hash": "415a724a",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "0c9b05",
+        "hash": "8638fcc8",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "0c9b05",
+        "hash": "d44b73c4",
+        "encoded": "spec:",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "0c9b05",
+        "hash": "feb60196",
+        "encoded": "%7B%7B-%20with%20.Values.authorizationPolicy.selector%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "0c9b05",
+        "hash": "7642d933",
+        "encoded": "selector:",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "0c9b05",
+        "hash": "f1e1913e",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "0c9b05",
+        "hash": "b37c446f",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "0c9b05",
+        "hash": "a574b2f9",
+        "encoded": "action:%20%7B%7B%20.Values.authorizationPolicy.action%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "0c9b05",
+        "hash": "93915f75",
+        "encoded": "%7B%7B-%20with%20.Values.authorizationPolicy.rules%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "0c9b05",
+        "hash": "11cc099b",
+        "encoded": "rules:",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "0c9b05",
+        "hash": "20cd3b92",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "0c9b05",
+        "hash": "023a5b7f",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "0c9b05",
+        "hash": "a96bff12",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

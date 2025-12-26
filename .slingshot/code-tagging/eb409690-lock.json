@@ -1,0 +1,250 @@
+{
+  "charts/network-policy/templates/network-policy.yaml": {
+    "f": "network-policy.yaml",
+    "p": "charts/network-policy/templates/network-policy.yaml",
+    "v": "v1",
+    "c": {
+      "737af9": {
+        "user": "Rohtash Kumar",
+        "model": "claude-opus-4@20250514",
+        "extraContext": "tbd",
+        "timestamp": 1766505442,
+        "hash": "b800772f",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentWriteTool"
+      }
+    },
+    "l": {
+      "0": {
+        "chunkId": "737af9",
+        "hash": "2a5fec24",
+        "encoded": "%7B%7B-%20if%20.Values.networkPolicy.enabled%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "737af9",
+        "hash": "7d39e025",
+        "encoded": "apiVersion:%20networking.k8s.io/v1",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "737af9",
+        "hash": "452a7750",
+        "encoded": "kind:%20NetworkPolicy",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "737af9",
+        "hash": "b2474965",
+        "encoded": "metadata:",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "737af9",
+        "hash": "12ca5858",
+        "encoded": "name:%20%7B%7B%20.Values.networkPolicy.name%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "737af9",
+        "hash": "a1bdbcdb",
+        "encoded": "namespace:%20%7B%7B%20.Values.global.namespace%20%7C%20default%20.Release.Namespace%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "737af9",
+        "hash": "01ab835a",
+        "encoded": "%7B%7B-%20with%20.Values.networkPolicy.labels%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "737af9",
+        "hash": "b1edda0e",
+        "encoded": "labels:",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "737af9",
+        "hash": "3bf9309f",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "737af9",
+        "hash": "4846aae0",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "737af9",
+        "hash": "eede5126",
+        "encoded": "%7B%7B-%20with%20.Values.networkPolicy.annotations%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "737af9",
+        "hash": "6f9c6edc",
+        "encoded": "annotations:",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "737af9",
+        "hash": "415a724a",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "737af9",
+        "hash": "8638fcc8",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "737af9",
+        "hash": "d44b73c4",
+        "encoded": "spec:",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "737af9",
+        "hash": "dcd00023",
+        "encoded": "%7B%7B-%20with%20.Values.networkPolicy.podSelector%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "737af9",
+        "hash": "e6275aa2",
+        "encoded": "podSelector:",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "737af9",
+        "hash": "f1e1913e",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "737af9",
+        "hash": "1460cd12",
+        "encoded": "%7B%7B-%20else%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "737af9",
+        "hash": "d78256ce",
+        "encoded": "podSelector:%20%7B%7D",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "737af9",
+        "hash": "57c6b40d",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "737af9",
+        "hash": "c1e6f2fd",
+        "encoded": "%7B%7B-%20with%20.Values.networkPolicy.policyTypes%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "737af9",
+        "hash": "7ca50bf4",
+        "encoded": "policyTypes:",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "737af9",
+        "hash": "0f97811d",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "737af9",
+        "hash": "a96bff12",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "737af9",
+        "hash": "582a08bf",
+        "encoded": "%7B%7B-%20if%20and%20.Values.networkPolicy.ingress%20(has%20%22Ingress%22%20.Values.networkPolicy.policyTypes)%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "737af9",
+        "hash": "7cf13930",
+        "encoded": "%7B%7B-%20with%20.Values.networkPolicy.ingress.rules%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "737af9",
+        "hash": "00d86db6",
+        "encoded": "ingress:",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "737af9",
+        "hash": "784ec325",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "737af9",
+        "hash": "dd410dfe",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "737af9",
+        "hash": "b19acbd2",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "737af9",
+        "hash": "e294a177",
+        "encoded": "%7B%7B-%20if%20and%20.Values.networkPolicy.egress%20(has%20%22Egress%22%20.Values.networkPolicy.policyTypes)%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "737af9",
+        "hash": "d39b30c1",
+        "encoded": "%7B%7B-%20with%20.Values.networkPolicy.egress.rules%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "737af9",
+        "hash": "621b5ef9",
+        "encoded": "egress:",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "737af9",
+        "hash": "df341ae5",
+        "encoded": "%7B%7B-%20toYaml%20.%20%7C%20nindent%204%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "737af9",
+        "hash": "67fec1ac",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "737af9",
+        "hash": "5daa1bab",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "737af9",
+        "hash": "72ba7654",
+        "encoded": "%7B%7B-%20end%20%7D%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
